@@ -248,7 +248,7 @@ function showCalendar(calendari){
 					for(let i=0; i<calendari._items.length;i++){						
 						if(!(nom.includes(calendari._items[i]._name.toString()))){
 							let p=document.createElement('p');
-							p.innerHTML= calendari._items[i]._name+" Preu:"+calendari._items[i]._price;
+							p.innerHTML= calendari._items[i]._name;//+" Preu:"+calendari._items[i]._price;
 							p.style.color =  getContrastYIQ((calendari._items[i]._color).substring(1));
 							p.style.backgroundColor= calendari._items[i]._color; 
 							$(".picker__footer").append(p);
