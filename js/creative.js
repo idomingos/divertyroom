@@ -83,7 +83,7 @@
 
 window.onload = function() {
     /* Init FireWorks */
-  Fireworks.initialize();
+  //Fireworks.initialize();
   /*Slider portada*/
   $('canvas').on('click', function(){
       let element = $('#slider').children(':visible');

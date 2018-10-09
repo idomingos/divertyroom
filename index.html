@@ -9,7 +9,7 @@
         <meta name="description" content="Lloguer d'espai a Lleida">
         <meta name="author" content="Iv&agrave; Domingo">
         <title>DivertyRoom</title>
-        <link href="css/fireworks.css" rel="stylesheet">
+        <!--link href="css/fireworks.css" rel="stylesheet"-->
 
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
        	<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
@@ -45,15 +45,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
+                    	<li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#sala">La nostra Sala</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#com">Com funciona</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#horaris">Horaris i tarifes</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#sala">La nostra Sala</a>
-                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#serveis">Serveis</a>
                         </li>
@@ -70,9 +71,9 @@
 
         <!-- Capçalera -->
         <header class="masthead text-center text-white d-flex">
-        	<div class="row" id="animacio">
+        	<!--div class="row" id="animacio">
         		<div class="col-12"  id="canvasDiv"></div>
-        	</div>
+        	</div-->
        
            <div class="container my-auto"> 
                 <div class="row portada" id="slider">
@@ -113,10 +114,74 @@
                 </div> -->
             </div>
         </header>
+
+                <!-- La nostra sala-->
+        <section id="sala">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">"LA NOSTRA SALA"</h2>
+                        <hr class="my-4 hr-negre">
+                        <p class="mt-5 mb-5 text-normal">
+                            <span>DIVERTY  ROOM</span>  és l'espai ideal per poder organitzar la seva festa . No dubtis en contractar la nostra sala polivalent, totalment equipada. Amb un ambient i ubicació immillorable a Lleida (davant dels Camps Elisis) fan que <span>DIVERTY ROOM</span> sigui la referència de locals de lloguers privats.
+                        </p>
+                        <p class="mt-5 mb-5 text-normal">
+                            A part en <span>DIVERTY ROOM</span>, podràs estar tranquil per què complim amb totes les mesures de seguretat i d’evacuació en cas d’emergència, amb extintors homologats i certificats, armari de primers auxilis.
+                        </p>
+                        <p class="mt-5 mb-5 text-normal">
+                        	El millor entorn per als teus convidats, on els més petits podran passar-s’ho genial, pensat per a tu i els teus.
+                        </p>
+                    </div>
+                </div>
+        	</div>
+        </section>
+        <section class="bg-primary">
+        	<div class="container">
+                <div class="row">
+                <!--Zona Menjador-->
+                    <div class="col-lg-4 col-12 col-t">
+                        <div class="t-main" data-toggle="modal" data-target="#mMenjador">
+                            <div class="t-front t-active t-active d-flex flex-column align-content-center justify-content-center logodoscaixes" onclick="">
+                                <p class="alcada "></p>
+                            </div>
+                            <div class="t-back t-active d-flex flex-column align-content-center justify-content-center">
+                                <h3>Zona Menjador</h3>
+                                <p>
+                                	La sala està dotada d’equipament audiovisual y WIFI per a ficar música i reproduir vídeos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                 <!--Zona Jocs-->
+                    <div class="col-lg-4 col-12 col-t">
+                        <div class="t-main" data-toggle="modal" data-target="#mJocs">
+                            <div class="t-front t-active t-active d-flex flex-column align-content-center justify-content-center" onclick="">
+                                <p class="alcada ">Jocs</p>
+                            </div>
+                            <div class="t-back t-active d-flex flex-column align-content-center justify-content-center">
+                                <h3>Zona Jocs</h3>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-12 col-t">
+                        <div class="t-main" data-toggle="modal" data-target="#mCuina">
+                            <div class="t-front t-active t-active d-flex flex-column align-content-center justify-content-center logodoscaixes" onclick="">
+                                <p class="alcada "></p>
+                            </div>
+                            <div class="t-back t-active d-flex flex-column align-content-center justify-content-center">
+                                <h3>Zona Cuina</h3>
+                                <p>(es contracta com un extra)</p>
+                                <p>(prohibida l’entrada a menors d’edat)</p>
+                            </div>
+                        </div>
+                    </div>
+             	</div>             
+            </div>
+        </section>
               
 
         <!-- Conm Funciona -->
-        <section class="bg-primary" id="com">
+        <section class="bg-secondary" id="com">
             <div class="container">
             	<div class="row">
             		<div class="col mx-auto text-center">
@@ -125,7 +190,7 @@
             		</div>
             	</div>
                 <div class="row">
-                    <div class="col-lg-6 mx-auto text-justify">
+                    <div class="col-12 mx-auto text-justify">
                         <p class="mb-4 text-normal">
                             A l'arribada a la sala, el personal de <span>DIVERTY ROOM</span> els explicarà el funcionament del lloguer de la sala i parts tècniques.
 							El preu de la sala s'abonarà abans de començar la festa.
@@ -138,9 +203,8 @@
 							Queda totalment prohibida l'entrada a la sala d'armes, artefactes pirotècnics, matèries explosives, inflamables o insalubres, així com l'entrada de cap tipus d'animals.
 							Es prohibeix fumar a l'interior de la sala, així com el consum de substàncies estupefaents o psicotròpiques.
                         </p>
-                        <!-- a class="btn btn-light btn-xl js-scroll-trigger boto-lila" href="#altres">Altres</a -->
                     </div>
-                    <div class="col-lg-6 mx-auto text-justify">
+                    <!--div class="col-lg-6 mx-auto text-justify">
                     	<p class="mb-4 text-normal">                    		
 							Queda prohibida la realització d'activitats il·lícites, contraries a l'ordre públic, la moral, els usos o costums del lloc. El contracte obliga a respectar i fer ús de les normes de seguretat, les ordres municipals i respectar les normes de la comunitat en què s'integra el local, responent dels danys que l'incompliment de tals preceptes s'ocasionin.
 							L'entrada de menors a la sala haurà de ser supervisada per adults majors d'edat, que és responsabilitzin de la vigilància dels menors. El llogater és  responsabilitza dels danys que puguin sofrir els seus convidats per causes alienes a l’estat de la sala (Per exemple, si durant la celebració se’ls hi cau aigua i degut a no recollir-lo algun convidat rellisques i es causes algun dany, la sala Diverty Room no es responsabilitzarà).
@@ -148,9 +212,21 @@
 							Diverty Room no es fa responsable dels accidents que es produeixin a l'interior de l'espai.
 							L'incompliment per part de l'usuari o de qualsevol persona que accedeix a la sala de les normes d'utilització d'aquesta, faculta a Diverty Room a suspendre l’esdeveniment o la festa. Exigint la restitució de la possessió de la sala i fent seves les quantitats entregades en concepte de garantia sense perjudicis del dret a exigir el ressarciment dels danys i perjudicis que s’han pogut ocasionar.
                     	</p>
-                    </div>
+                    </div-->
                 </div>
+                 <div class="row">
+	                    <div class="col-lg-12 text-center mb-4 mt-4">
+	                        <div class="btn btn-light btn-xxl js-scroll-trigger boto-blanc sr-button" data-toggle="modal" data-target="#mNormativaSala">
+	                            <i>Normativa</i>
+	                        </div>
+	                    </div>
+	                </div>
             </div>
+        </section>
+        <section style="padding:  0 !important;">
+        	<div class="row">
+        		<div class="col children"></div>
+            </div>            
         </section>
 
         <!-- Horaris i tarifes -->
@@ -166,31 +242,29 @@
 
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="card mx-auto" style="width: 18rem;">
-                        	<div class="card-header">
-                        		<h4>Dilluns a Dijous</h4>
-                        	</div>
-						  	<div class="card-body">
-						  		
+                        <div class="mx-auto">                        	
+                        		<h4>Dilluns a Dijous</h4>                        	
 						  		<table>
 							  		<tr>
-							  			<td>Matí</td>
+							  			<th>Matí:</th>
 							  			<td>10:30h a 13:45h</td>
-							  			<td>75€</td>
+							  			<td class="preu">75</td>
 							  		</tr>
 							  		<tr>
-							  			<td>Tarde</td>
+							  			<th>Tarde:</th>
 							  			<td>16:15h a 20:45h</td>
-							  			<td>100€</td>
+							  			<td class="preu">100</td>
 							  		</tr>
 							  		<tr>
-							  			<td>Nit</td>
+							  			<th>Nit:</th>
 							  			<td>21:00 a 23:00</td>
-							  			<td>55€</td>
+							  			<td class="preu">55</td>
 							  		</tr>
-						  		</table>
-						  		<p>Hores extres 25€</p>
-						  	</div>
+							  		<tr class="extres">
+							  			<th colspan="2">Hores extres:</th>
+							  			<td class="preu">55</td>
+							  		</tr>
+						  		</table>						  	
 						</div>
                     </div>
                     <div class="col-lg-6 col-12 text-justify">
@@ -201,34 +275,37 @@
 				</div>                  
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="card mx-auto" style="width: 18rem;">
-                        	<div class="card-header">
+                        <div class="mx-auto">
+                        	<div>
                         		<h4>Divendres</h4>
                         	</div>
-						  	<div class="card-body">
+						  	<div>
 							  	<table>
 							  		<tr>
-							  			<td>Matí</td>
+							  			<th>Matí:</th>
 							  			<td>10:30h a 13:45h</td>
-							  			<td>75€</td>
+							  			<td class="preu">75</td>
 							  		</tr>
 							  		<tr>
-							  			<td>Tarde</td>
+							  			<th>Tarde:</th>
 							  			<td>16:15h a 20:45h</td>
-							  			<td>110€</td>
+							  			<td class="preu">110</td>
 							  		</tr>
 							  		<tr>
-							  			<td>Nit</td>
-							  			<td>21:00 a 23:00</td>
-							  			<td>55€</td>
+							  			<th>Nit:</th>
+							  			<td>21:00h a 23:00h</td>
+							  			<td class="preu">55</td>
 							  		</tr>
 							  		<tr>
-							  			<td></td>
-							  			<td>23:00 a 02:30</td>
+							  			<th></th>
+							  			<td>23:00h a 02:30h</td>
 							  			<td>Cons</td>
 							  		</tr>
+							  		<tr class="extres">
+							  			<th colspan="2">Hores extres:</th>					  			
+							  			<td class="preu">25</td>
+							  		</tr>
 							  	</table>
-						  		<p>Hores extres 25€</p>
 						  	</div>
 						</div>
                     </div>
@@ -238,40 +315,40 @@
                     	<p>Es deixarà una fiança de 30 euros en concepte de neteja, pel cas que no es deixés recollit i net la sala.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 col-12 justify-content-center">
-                        <div class="card mx-auto" style="width: 18rem;">
-                        	<div class="card-header">
-                        		<h4>Dissabte, Diumenge</h4> 
-                        		<h5>i vespres de festius</h5>
-                        	</div>
-							<div class="card-body">
-							  	<table>
-							  		<tr>
-							  			<td>Matí</td>
-							  			<td>10:30h a 13:45h</td>
-							  			<td>120€</td>
-							  		</tr>
-							  		<tr>
-							  			<td>Tarde</td>
-							  			<td>16:15h a 20:45h</td>
-							  			<td>150€</td>
-							  		</tr>
-							  		<tr>
-							  			<td>Nit</td>
-							  			<td>21:00 a 23:00</td>
-							  			<td>65€</td>
-							  		</tr>
-							  		<tr>
-							  			<td></td>
-							  			<td>23:00 a 02:30</td>
-							  			<td>Cons</td>
-							  		</tr>
-							  	</table>
-						  		<p>Hores extres 30€</p>
-						  	</div>
-						</div>
+                <div class="row" >
+                    <div class="col-lg-6 col-12 ">
+                        <div class="mx-auto">
+                        	<h4>Dissabte, Diumenge</h4> 
+                        	<h5>i vespres de festius</h5>
+                        	<table>
+								<tr>
+									<th>Matí:</th>
+									<td>10:30h a 13:45h</td>
+							  		<td class="preu">120</td>
+							  	</tr>
+							  	<tr>
+							  		<th>Tarde:</th>
+							  		<td>16:15h a 20:45h</td>
+							  		<td class="preu">150</td>
+							  	</tr>
+							  	<tr>
+							  		<th>Nit:</th>
+							  		<td>21:00h a 23:00h</td>
+							  		<td class="preu">65</td>
+							  	</tr>
+							  	<tr>
+							  		<th></th>
+							  		<td>23:00h a 02:30h</td>
+							  		<td>Cons</td>
+							  	</tr>
+							  	<tr class="extres">
+							  		<th colspan="2">Hores extres:</th>					  			
+							  		<td class="preu">30</td>
+							  	</tr>
+							</table>                        	  	
+                    	</div>
                     </div>
+
                     <div class="col-lg-6 col-12 text-justify">
                     	<p>Es poden ampliar els horaris a un cost addicional de 30 €/hora fins a les 22:00, i 35 €/hora a partir de les 22:00, sempre que la sala estigui disponible.</p>
                     	<p>L’ús del servei de cuina, comporta un extra de 70 € (s’ha de deixar net i recollit, en el cas de fer l´ús i de no procedir a la neteja de la cuina, s’haurà d’abonar 30 euros en concepte de neteja).</p>
@@ -283,168 +360,28 @@
                 <div class="row">
                    <div class="col-6 mx-auto">
                    		<button id="bCalendar" type="button" class="btn btn-secondary btn-lg btn-block">Calendari</button>
-                   		<!--button id="bCalendar">Calendari</button> -->
                    </div>
-                 <div class="row">
-                   <div class="col-12">
+                </div>
+                <div class="row">
+                	<div class="col-lg-8 mx-auto text-cnter">
                    		<p>Per conèixer preus de <span>DIES FESTIUS ESPECIAL</span>  com La Pasqua, Sant Joan, la Nit de Nadal, Dia de Nadal, Sant Esteve, Any Nou, Nit de Reis contactar amb nosaltres.</p>
-                   </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-        <!-- La nostra sala-->
-        <section id="sala" class="bg-primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">"LA SALA"</h2>
-                        <hr class="my-4 hr-negre">
-                        <p class="mt-5 mb-5 text-normal">
-                            <span>DIVERTY  ROOM</span>  és l'espai ideal per poder organitzar la seva festa . No dubtis en contractar la nostra sala polivalent, totalment equipada. Amb un ambient i ubicació immillorable a Lleida (davant dels Camps Elisis) fan que <span>DIVERTY ROOM</span> sigui la referència de locals de lloguers privats.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                <!--Zona Menjador-->
-                    <div class="col-lg-12 col-12 col-t">
-                        <div class="t-main" data-toggle="modal" data-target="#mMenjador">
-                            <div class="t-front t-active t-active d-flex flex-column align-content-center justify-content-center logodoscaixes" onclick="">
-                                <p class="alcada "></p>
-                            </div>
-                            <div class="t-back t-active d-flex flex-column align-content-center justify-content-center">
-                                <h3>Zona Menjador</h3>
-                                <p>
-                                	La sala està dotada d’equipament audiovisual y WIFI per a ficar música i reproduir vídeos.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                 <!--Zona Jocs-->
-                    <div class="col-lg-6 col-12 col-t">
-                        <div class="t-main" data-toggle="modal" data-target="#mJocs">
-                            <div class="t-front t-active t-active d-flex flex-column align-content-center justify-content-center" onclick="">
-                                <p class="alcada ">Jocs</p>
-                            </div>
-                            <div class="t-back t-active d-flex flex-column align-content-center justify-content-center">
-                                <h3>Zona Jocs</h3>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-6 col-12 col-t">
-                        <div class="t-main" data-toggle="modal" data-target="#mCuina">
-                            <div class="t-front t-active t-active d-flex flex-column align-content-center justify-content-center logodoscaixes" onclick="">
-                                <p class="alcada "></p>
-                            </div>
-                            <div class="t-back t-active d-flex flex-column align-content-center justify-content-center">
-                                <h3>Zona Cuina</h3>
-                                <p>(es contracta com un extra)</p>
-                                <p>(prohibida l’entrada a menors d’edat)</p>
-                            </div>
-                        </div>
-                    </div>
-             	</div>
-
-	            <!-- Un botó i sr-icons
-	                
-	                <div class="row">
-	                    <div class="col-lg-3 col-md-6 text-center">
-	                        <div class="service-box mt-5 mx-auto">
-	                            <i class="fa-4x fas fa-euro-sign text-primary mb-3 sr-icons"></i>
-	                            <h3 class="mb-3">B&agrave;sic</h3>
-	                            <p class="mb-0">
-	                                10 € 
-	                            </p>
-	                        </div>
-	                    </div>
-	                    <div class="col-lg-3 col-md-6 text-center">
-	                        <div class="service-box mt-5 mx-auto">
-	                            <i class="fa-4x fas fa-key text-primary mb-3 sr-icons"></i>
-	                            <h3 class="mb-3">Advance</h3>
-	                            <p class="mb-0">
-	                                Aqui pots explicar coses del producte advance, doncs te aix&ograve; o altre.
-	                            </p>
-	                        </div>
-	                    </div>
-	                    <div class="col-lg-3 col-md-6 text-center">
-	                        <div class="service-box mt-5 mx-auto">
-	                            <i class="fa-4x fas fa-truck text-primary mb-3 sr-icons"></i>
-	                            <h3 class="mb-3">Transport</h3>
-	                            <p class="mb-0">
-	                                Es pot explicar les condicions de transport per exemple. entraga en 48h per la vall ...
-	                            </p>
-	                        </div>
-	                    </div>
-	                    <div class="col-lg-3 col-md-6 text-center">
-	                        <div class="service-box mt-5 mx-auto">
-	                            <i class="fa-4x fas fa-wrench text-primary mb-3 sr-icons"></i>
-	                            <h3 class="mb-3">Garantia</h3>
-	                            <p class="mb-4">
-	                                Servei de reparació propi, per a urg&egrave;ncies
-	                            </p>
-	                        </div>
-	                    </div>
-	                </div>
-	             -->    
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <p class="mt-5 mb-5 text-normal">
-                            A part en <span>DIVERTY ROOM</span>, podràs estar tranquil per què complim amb totes les mesures de seguretat i d’evacuació en cas d’emergència, amb extintors homologats i certificats, armari de primers auxilis.
-                        </p>
-                        <p class="mt-5 mb-5 text-normal">
-                        	El millor entorn per als teus convidats, on els més petits podran passar-s’ho genial, pensat per a tu i els teus.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-	                    <div class="col-lg-12 text-center mb-4 mt-4">
-	                        <div class="btn btn-light btn-xxl js-scroll-trigger boto-blanc sr-button" data-toggle="modal" data-target="#mNormativaSala">
-	                            <i>Normativa</i>
-	                        </div>
-	                    </div>
-	                </div>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <p class="mt-5 mb-5 text-normal">
-                        	Agafa la sala més exclusiva de Lleida!
-                        </p>
-                    </div>
-                </div>
-            	 
-
-            </div>
+         <section style="padding:  0 !important;">
+        	<div class="row">
+        		<div class="col cookies"></div>
+            </div>            
         </section>
 
          <!-- Serveis -->
-        <section id="serveis">
+        <section id="serveis" class="bg-secondary">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <h2 class="section-heading">Serveis</h2>
                         <hr class="my-4">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 text-center">
-                    	catering
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <a href="https://www.google.cat" target="_blank">
-                            <img class="fa fa-4x fa-heart text-primary mb-3 sr-icons collaborador" src="img/cols/logo-1.png" alt="Logo partner 1">
-                        </a>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <a href="https://www.google.cat" target="_blank">
-                            <img class="fa fa-4x fa-heart text-primary mb-3 sr-icons collaborador" src="img/cols/hor.png" alt="Logo partner 1">
-                        </a>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <a href="https://www.google.cat" target="_blank">
-                            <img class="fa fa-4x fa-heart text-primary mb-3 sr-icons collaborador" src="img/cols/logo-1.png" alt="Logo partner 1">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 text-center">
                     </div>
                 </div>
                 <div id="calen" class="modal-body">
@@ -472,10 +409,10 @@
                     </div>
                 </div>
                 <div class="row">
-                	<div class="col text-justify">
+                	<div class="col text-center">
                 		<p class="text-normal">Reserva ara la nostra sala per a la data que més desitgis!</p>
                 		<p class="text-normal">Escull una data lliure del nostre calendari i omple les dades per a la reserva.</p>
-                        <p class="text-normal">Pots escollir entre horari de matí, tarda, nit o tot el dia! Al fer la reserva online o per telèfon, només hauràs de pagar el 50%, (ens ficarem en contacte per donar-te el número de c.c.c)  i l'altre 50% a la sala el dia de la festa!
+                        <p class="text-normal">Pots escollir entre horari de matí, tarda, nit o tot el dia! Al fer la reserva online o per telèfon, només hauràs de pagar el 50%, (ens ficarem en contacte per donar-te el número de c.c.)  i l'altre 50% a la sala el dia de la festa!
                         </p>
                 	</div>
                 </div>
@@ -565,7 +502,7 @@
 					</form>
                 </div>
                 <div class="row">
-                	<div class="col text-justify">
+                	<div class="col text-center">
                 		<p class="text-normal">En cas de voler modificar o cancel·lar la reserva, posa't en contacte amb nosaltres.</p>
                 	</div>
                 </div>
@@ -581,10 +518,7 @@
             			<hr class="my-4">
             		</div>
             	</div>
-            	<div class="row justify-content-center">
-            			<iframe class="col" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404.8292431935142!2d0.632035383524405!3d41.61288523035175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6e065b494f9cf%3A0x6eb465ef78b82f4d!2sCarrer+Santa+Cec%C3%ADlia%2C+14%2C+25001+Lleida!5e1!3m2!1ses!2ses!4v1536425686774" frameborder="0" style="border:0  width: 100%;  height: 450px;" allowfullscreen></iframe>
-            	</div>
-                <div class="row">
+            	<div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <p class="mb-5 text-normal">
                             David Rodriguez
@@ -597,42 +531,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2 col-sm-3  text-center">
-                    </div>
-                    <div class="col-3 col-sm-2 text-center">
-                        <a href="mailto:info@divertyroom.com" target="_blank">
-                            <i class="fas fa-at fa-4x mb-3 sr-contact"></i>
-                        </a>
-                    </div>
-                    <!--
-                    <div class="col-lg-2 text-center">
-                        <a href="https://twitter.com/user" target="_blank">
-                            <i class="fab fa-twitter fa-4x mb-3 sr-contact"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="col-lg-2 text-center">
-                        <a href="https://t.me/user" target="_blank">
-                            <i class="fab fa-telegram fa-4x mb-3 sr-contact"></i>
-                        </a>
-                    </div>
-                	-->
-                    <div class="col-3 col-sm-2  text-center">
-                        <a href="https://www.instagram.com/divertyroom/" target="_blank">
-                            <i class="fab fa-instagram fa-4x mb-3 sr-contact"></i>
-                        </a>
-                    </div>
-                    <div class="col-3 col-sm-2  text-center">
-                        <a href="https://www.facebook.com/divertyroom" target="_blank">
-                            <i class="fab fa-facebook-f fa-4x mb-3 sr-contact"></i>
-                        </a>
-                    </div>
-                    <div class="col-1 col-sm-3  text-center">
-                    </div>
-                </div>
+                
             </div>
         </section>
+        <section style="padding:  0 !important;">
+        	<div class="row">
+            	<iframe class="col-lg-12 col-md-12 col-sm-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404.8292431935142!2d0.632035383524405!3d41.61288523035175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6e065b494f9cf%3A0x6eb465ef78b82f4d!2sCarrer+Santa+Cec%C3%ADlia%2C+14%2C+25001+Lleida!5e1!3m2!1ses!2ses!4v1536425686774" frameborder="0" style="border:0  width: 100%;  height: 450px;" allowfullscreen></iframe>
+            </div>            
+        </section>
+
         
 <!-- Footer -->
 	<footer class="page-footer font-small pt-4 bg-primary D-flex">
@@ -640,74 +547,45 @@
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
 
-      <!-- Grid row -->
-      <div class="row">
+      	<!-- Grid row -->
+    	<div class="row">
+        	<!-- Grid column -->
+	        <div class=" col-12 col-md-6 mt-md-0 mt-3 mx-auto">
+    	    	<!-- Copyright -->
+    			<div class="footer-copyright text-left py-3">© 2018 Copyright:
+      				<a href="https://www.divertyroom.com"> divertyroom.com</a>
+    				<!-- Copyright -->    
+    				<!-- Legal -->
+            		<ul class="list-inline">
+            			<li class="list-inline-item"><h5 class="text-uppercase">Avís Legal</h5></li>
+             			<li class="list-inline-item" data-toggle="modal" data-target="#mCondicions">Termes i condicions d'ús</li>
+             			<li class="list-inline-item" data-toggle="modal" data-target="#mPrivacitat">Política de Privacitat</li>
+             			<li class="list-inline-item" data-toggle="modal" data-target="#mRestriccio">Restriccions</li>
+            		</ul>
+            	</div>
+        	</div>
+        	<div class="col-4 col-md-2 mt-md-0 mt-1 mx-auto text-center">
+                <a href="mailto:info@divertyroom.com" target="_blank">
+                    <i class="fas fa-at fa-4x mb-3 sr-contact"></i>
+                </a>
+            </div>
+            <div class="col-4 col-md-2 mt-md-0 mt-1 mx-auto  text-center">
+                <a href="https://www.instagram.com/divertyroom/" target="_blank">
+                    <i class="fab fa-instagram fa-4x mb-3 sr-contact"></i>
+                </a>
+            </div>
+        	<div class="col-4 col-md-2 mt-md-0 mt-1 mx-auto text-center">
+            	<a href="https://www.facebook.com/divertyroom" target="_blank">
+            		<i class="fab fa-facebook-f fa-4x mb-3 sr-contact"></i>
+            	</a>
+        	</div>
 
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-
-          <!-- Content -->
-          <h5 class="text-uppercase">Diverty Room</h5>
-          <p>C/ Santa Cecília Nº 14, baixos</p>
-          <p>Cappont</p>
-          <p>25001 Lleida (Lleida)</p>
-          <p>Davant antiga Piscina Coberta dels Camps Elísis.</p>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Llocs d'interès</h5>
-
-            <ul class="list-unstyled">
-            	<li>
-                	<a href="http://www.atmlleida.cat/" >Autoritat territorial de la mobilitat</a>
-              	</li>
-              	<li>
-                	<a href="http://www.eucatra.com">Serveis Informàtics</a>
-              	</li>
-              	<li>
-                	<a href="https://www.gencat.cat">Generalitat de Catalunya</a>
-              	</li>
-              	<li>
-                	<a href="http://www.iva.cat">Ivà</a>
-              	</li>
-            </ul>
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Avís Legal</h5>
-
-            <ul class="list-unstyled">
-              <li data-toggle="modal" data-target="#mCondicions">Termes i condicions d'ús</li>
-              <li data-toggle="modal" data-target="#mPrivacitat">Política de Privacitat</li>
-              <li data-toggle="modal" data-target="#mRestriccio">Restriccions</li>
-            </ul>
-
-          </div>
-          <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
+    	</div>
+      	<!-- Grid row -->
     </div>
     <!-- Footer Links -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://www.divertyroom.com"> divertyroom.com</a>
-    </div>
-    <!-- Copyright -->
+   
 
   	</footer>
 <!-- Footer -->
@@ -1096,7 +974,7 @@
         <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>      
 
         <script src="js/requestanimframe.js"></script>
-  		<script src="js/fireworks.js"></script>
+  		<!--script src="js/fireworks.js"></script-->
 
   		<script type="text/javascript" src="./vendor/pickadate/js/picker.js"></script>
 		<script type="text/javascript" src="./vendor/pickadate/js/picker.date.js"></script>

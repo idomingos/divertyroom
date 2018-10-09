@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+
 div table{
     width: 100%;
 }
 
 body {
-  font-family: 'Montserrat';
+  /*font-family: 'Montserrat';*/
+  font-family: 'Open Sans','spinweradBold', 'Montserrat', Arial, sans-serif; 
 }
+header{
+    background-image: url("../img/IMATGES/balloons.jpg");
+}
+
+.children{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/IMATGES/children.jpg");
+}
+
+.cookies{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/IMATGES/farmers.jpg");
+}
+
+
 
 #logocentral {
     width: 70%;
@@ -138,6 +159,7 @@ p.text-autor {
 }
 
 section {
+    
   padding: 3rem 0 !important;
 }
 
@@ -234,4 +256,27 @@ hr.my-4 {
 }
 .n14{
     background-color: yellow;
+}
+
+td:nth-child(3){
+   /* border-bottom: .2px dotted;*/
+    text-align: right;
+}
+td{
+    border-bottom: .2px dotted;
+}
+
+th{
+    width: 10%;
+}
+.extres th{
+    text-align: right;
+}
+
+.preu{
+    text-align: right;
+}
+
+.preu:after {
+  content: '€';
 }

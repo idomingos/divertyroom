@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'spinweradBold', 'Montserrat', Arial, sans-serif;
+  font-family: 'open sans','spinweradBold', 'Montserrat', Arial, sans-serif;
 }
 
 hr {
@@ -47,7 +47,11 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F26522 !important;
+  background-color: #ff5a00 !important;
+}
+
+.bg-secondary{
+  background-color: #e5dbe6 !important;
 }
 
 .bg-dark {
@@ -60,7 +64,8 @@ h6 {
 
 .text-normal {
   color: rgba(0, 0, 0, 0.7);
-  font-size: 1.5rem !important;
+  font-size: 1.4rem !important;
+  font-weight: 600;
 }
 
 section {

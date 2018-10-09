@@ -13,7 +13,7 @@ var color=["yellow","blue","red","green","white"];
 var index = 0;
 var colorchg = function(color){
 	$('h1').css('color',color);
-	Fireworks.createFirework();
+	//Fireworks.createFirework();
 	};
 setInterval("colorchg(color[++index%color.length])",3000);
 
