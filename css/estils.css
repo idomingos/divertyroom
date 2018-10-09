@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
-
 div table{
     width: 100%;
 }
@@ -150,7 +149,7 @@ p.text-autor {
         margin-top: 5rem !important;
     }
     #mainNav {
-        background-color: #99b !important;
+        background-color: #ff5a00 !important;
     }
     #com .text-normal{
         font-size: 1rem !important;
@@ -200,11 +199,11 @@ hr.hr-negre {
 }
 
 #mainNav.navbar-shrink {
-    background-color: #F26522 !important;
+    background-color: #ff5a00 !important;
 }
 
 #mainNav.navbar-shrink {
-    background-color: #F26522 !important;
+    background-color: #ff5a00 !important;
 }
 
 img.collaborador:hover {
@@ -277,15 +276,15 @@ hr.my-4 {
     background-color: yellow;
 }
 
-td:nth-child(3){
+.horari td:nth-child(3){
    /* border-bottom: .2px dotted;*/
     text-align: right;
 }
-td{
+.horari td{
     border-bottom: .2px dotted;
 }
 
-th{
+.horari th{
     width: 10%;
 }
 .extres th{
