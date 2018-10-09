@@ -85,7 +85,7 @@ window.onload = function() {
     /* Init FireWorks */
   //Fireworks.initialize();
   /*Slider portada*/
-  $('canvas').on('click', function(){
+  $('header').on('click', function(){
       let element = $('#slider').children(':visible');
       element.fadeOut(1500, function(){
         element.next().length ? element.next().fadeIn(500) : element.parent().children().first().fadeIn(500);

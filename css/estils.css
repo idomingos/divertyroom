@@ -11,18 +11,23 @@ body {
 }
 header{
     background-image: url("../img/IMATGES/balloons.jpg");
+    cursor:pointer;
 }
 
 .children{
     height: 400px;
     width: 100%;
     background-image: url("../img/IMATGES/children.jpg");
+     background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .cookies{
     height: 400px;
     width: 100%;
     background-image: url("../img/IMATGES/farmers.jpg");
+     background-size:cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -118,7 +123,7 @@ p.text-autor {
     margin-bottom: 0 !important;
     margin-top: 3rem !important;
     display: none;
-    /*opacity: 0.5; */
+    font-size: 1.5rem;
 }
 
 .text-portada p{
@@ -131,7 +136,7 @@ p.text-autor {
     display: inline-block;
     padding: 0 5px;
     margin-bottom: -5rem;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
 }
 .portada{
      cursor: pointer;
@@ -206,9 +211,23 @@ img.collaborador:hover {
     opacity: 0.3 !important;
 }
 
-div.logodoscaixes {
-    background-image: url("../img/logos/imatge2caixes.png") !important;
+div.imggirl {
+    background-image: url("../img/IMATGES/girl.jpg") !important;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
+
+div.imgfootball {
+    background-image: url("../img/IMATGES/football.jpg") !important;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+div.imgchiken {
+    background-image: url("../img/IMATGES/kitchen.jpg") !important;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
 
 #map {
     height: 90%;
