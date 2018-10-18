@@ -9,23 +9,26 @@ body {
   font-family: 'Open Sans','spinweradBold', 'Montserrat', Arial, sans-serif; 
 }
 header{
-    background-image: url("../img/IMATGES/balloons.jpg");
+    /*background-image: url("../img/IMATGES/balloons.jpg");
+    background-image: url("../img/drspinwerad.png");*/
+    background-size:cover;
+    background-repeat: no-repeat;
     cursor:pointer;
 }
 
-.children{
-    height: 400px;
+.sala{
+    height: 600px;
     width: 100%;
-    background-image: url("../img/IMATGES/children.jpg");
+   /* background-image: url("../img/IMATGES/children.jpg");
      background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 .cookies{
-    height: 400px;
+    height: 600px;
     width: 100%;
     background-image: url("../img/IMATGES/farmers.jpg");
-     background-size:cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -122,7 +125,7 @@ p.text-autor {
     margin-bottom: 0 !important;
     margin-top: 3rem !important;
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
 }
 
 .text-portada p{
@@ -211,13 +214,18 @@ img.collaborador:hover {
 }
 
 div.imggirl {
-    background-image: url("../img/IMATGES/girl.jpg") !important;
-    background-size:cover;
+    /*background-image: url("../img/IMATGES/girl.jpg") !important;*/
+    background-color: white;
+    background-image: url("../img/noves/karaoke2.jpg") !important;
+    background-size:contain;
     background-repeat: no-repeat;
+    background-position: center; 
 }
 
 div.imgfootball {
-    background-image: url("../img/IMATGES/football.jpg") !important;
+    /*background-image: url("../img/IMATGES/football.jpg") !important;*/
+    background-image: url("../img/noves/jocs.jpg") !important;
+
     background-size:cover;
     background-repeat: no-repeat;
 }
