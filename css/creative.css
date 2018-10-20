@@ -204,6 +204,12 @@ header.masthead hr {
 header.masthead h1 {
   font-size: 2rem;
 }
+header.masthead h2 {
+  font-size: 1rem;
+  color:#ff5a00;
+}
+
+
 
 header.masthead p {
   font-weight: 300;
@@ -225,11 +231,17 @@ header.masthead p {
   header.masthead h1 {
     font-size: 3rem;
   }
+  header.masthead h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 6rem;
+  }
+  header.masthead h2 {
+    font-size: 3rem;
   }
 }
 

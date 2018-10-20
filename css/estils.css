@@ -34,7 +34,7 @@ header{
 
 
 
-#logocentral {
+.logocentral {
     width: 70%;
     margin-top: -2rem;
     margin-bottom: 0rem;
@@ -46,7 +46,7 @@ header{
 }
 
 @media screen and (max-width: 992px) {
-    #logocentral {
+    .logocentral {
         width: 100%;
         margin-top: 8rem;
     }
@@ -251,7 +251,7 @@ hr.my-4 {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
-    #logocentral {
+    .logocentral {
         margin-top: 7rem;
     }
 }
@@ -282,6 +282,11 @@ hr.my-4 {
 }
 .n14{
     background-color: yellow;
+}
+.horari{
+    border:1px solid black;
+    border-radius: 5px 43px;
+    margin-bottom: 10px;
 }
 
 .horari td:nth-child(3){
