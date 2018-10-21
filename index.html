@@ -449,14 +449,14 @@
                 		<div class="form-row">
                 			<div class="col-md-4">
                 				<label for="validationDate">Data de la reserva</label>
-                				<input type="text" id="validationDate" name="date" class="form-control">
+                				<input name="dateReserva" type="text" id="validationDate"  class="form-control">
                 				<div class="valid-feedback">
                 					Correcte !
                 				</div>
                 			</div>
                 			<div class="col-md-4">
                 				<label for="validationHorari">Horari</label>
-                				<select class="custom-select" id="validationHorari" required>
+                				<select name="horariReserva" class="custom-select" id="validationHorari" required>
 							    	<option value="">Obrir per seleccionar Horari</option>
 							    <!--  	<option value="1">Matí</option>
 							      	<option value="2">Tarda</option>
@@ -470,14 +470,14 @@
 						<div class="form-row">
 					    	<div class="col-md-4 mb-3">
 					      		<label for="validationName">Nom</label>
-					      		<input type="text" class="form-control" id="validationName" placeholder="Nom" value="" required>
+					      		<input name="nameReserva" type="text" class="form-control" id="validationName" placeholder="Nom" value="" required>
 					      		<div class="valid-feedback">
 					        		Correcte !
 					      		</div>
 					    	</div>
 					    	<div class="col-md-4 mb-3">
 						      	<label for="validationSurname">Cognoms</label>
-						      <input type="text" class="form-control" id="validationSurname" placeholder="Cognoms" value="" required>
+						      <input name="surnameReserva" type="text" class="form-control" id="validationSurname" placeholder="Cognoms" value="" required>
 						      <div class="valid-feedback">
 						        Correcte !
 						      </div>
@@ -485,7 +485,7 @@
 						    <div class="col-md-4 mb-3">
 				    			<label for="validationBirthDay">Data Naixement</label>
 					      		<div class="input-group">					        		
-					        		<input type="date" id="validationBirthDay" name="bday" min="1900-01-01" max="2000-12-31" class="form-control">
+					        		<input name="bdayReserva" type="date" id="validationBirthDay" min="1900-01-01" max="2000-12-31" class="form-control">
 					        		<div class="invalid-feedback">
 					          			Introdueix la data de naixement dd/mm/aaaa.
 					        		</div>
@@ -495,21 +495,21 @@
 					  	<div class="form-row">
 					    	<div class="col-md-6 mb-3">
 							    <label for="validationEmail">Correu electrònic</label>
-							    <input type="email" class="form-control" id="validationEmail" placeholder="exemple@divertyroom.com" required>
+							    <input name="emailReserva" type="email" class="form-control" id="validationEmail" placeholder="exemple@divertyroom.com" required>
 							    <div class="invalid-feedback">
 					    			Introdueix un correu electrònic vàlid.
 					    		</div>
 					    	</div>
 					    	<div class="col-md-3 mb-3">
 					      		<label for="validationTel">Telèfon principal</label>
-					      		<input type="tel" class="form-control" id="validationTel" placeholder="">
+					      		<input name="telReserva" type="tel" class="form-control" id="validationTel" placeholder="">
 					      		<div class="invalid-feedback">
 					        		Introdueix el telèfon de contacte principal.
 					      		</div>
 					    	</div>
 					    	<div class="col-md-3 mb-3">
 					      		<label for="validationTel2">Telèfon alternatiu</label>
-					      		<input type="tel" class="form-control" id="validationTel2" placeholder="">
+					      		<input name="tel2Reserva" type="tel" class="form-control" id="validationTel2" placeholder="">
 					      		<div class="invalid-feedback">
 					        		Introdueixi un segon telèfon de contacte.
 					      		</div>
@@ -561,7 +561,7 @@
                     	<form class="needs-validation col" action="https://formspree.io/info@divertyroom.com" method="POST" novalidate>
                     		<div class="form-row">
                     			<div class="col">
-					      			<input type="text" class="form-control" placeholder="Nom" value="" required>
+					      			<input name="contactName"  type="text" class="form-control" placeholder="Nom" value="" required>
 					      			<div class="valid-feedback">
 					        			Correcte !
 					      			</div>
@@ -569,7 +569,7 @@
 					    	</div>
 					    	<div class="form-row">
 					    		<div class="col">					      		
-					      			<input type="text" class="form-control" placeholder="Correu electrònic" value="" required>
+					      			<input name="emailContact" type="text" class="form-control" placeholder="Correu electrònic" value="" required>
 					      			<div class="valid-feedback">
 					        			Correcte !
 					      			</div>
@@ -577,7 +577,7 @@
 					    	</div>
 					    	<div class="form-row">
 					    		<div class="col">
-					    			<textarea class="form-control"  placeholder="Missatge" rows="5"></textarea>
+					    			<textarea name="messageContact" class="form-control"  placeholder="Missatge" rows="5"></textarea>
 
 					      			<!--input type="textarea" class="form-control"  placeholder="Missatge" value="" required-->
 					      			<div class="valid-feedback">
