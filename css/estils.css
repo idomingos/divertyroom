@@ -319,3 +319,9 @@ hr.my-4 {
 .preu:after {
   content: '€';
 }
+.invalid-feedback{
+    color:white;
+}
+.valid-feedback{
+    color:black;
+}

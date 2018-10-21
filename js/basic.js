@@ -123,10 +123,8 @@ function getCalendar(calendarId,timeMin){
   						}
 	  					else{
 							var calendari = [];
-    						var d = new Date();
-    					
+    						var d = new Date();    					
 							for(var i=0; i < data.items.length; i++){
-
 								let eLlista = document.createElement('li');
 								let texte = document.createElement('p');
 							

@@ -97,17 +97,21 @@ window.onload = function() {
     })
     });
 
-  var festius = "ca.spain#holiday@group.v.calendar.google.com";
-  var tarifa = "u0vqqk6aat4s31j18phgqjvamk@group.calendar.google.com";
+  //var festius = "ca.spain#holiday@group.v.calendar.google.com";
+  //var tarifa = "u0vqqk6aat4s31j18phgqjvamk@group.calendar.google.com";
+  var tarifa = "eucatra.net_0iqtcha29bo7a8j828ed95tp9k@group.calendar.google.com"
+  var reserva ="divertyroom@eucatra.net";
   var calTarifa = new Calendars();
   var calEvent = new Calendars();
   getCalendar(tarifa,'2018-01-01').then(function(cal){
     calTarifa.set(cal);
     showCalendar(calTarifa);
-
+  });
+   getCalendar(reserva,'2018-01-01').then(function(cal){
     calEvent.set(cal);
     showReserva(calEvent);
   });
+
 
    //Form Validation
     var forms = document.getElementsByClassName('needs-validation');
