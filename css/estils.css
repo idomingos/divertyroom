@@ -19,15 +19,12 @@ header{
 .sala{
     height: 600px;
     width: 100%;
-   /* background-image: url("../img/IMATGES/children.jpg");
-     background-size:cover;
-    background-repeat: no-repeat;*/
 }
 
 .cookies{
     height: 600px;
     width: 100%;
-    background-image: url("../img/IMATGES/farmers.jpg");
+    background-image: url("../img/IMATGES/farmers_desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -36,7 +33,7 @@ header{
 
 .logocentral {
     width: 70%;
-    margin-top: -2rem;
+    margin-top: 0.5rem;
     margin-bottom: 0rem;
 }
 
@@ -48,8 +45,19 @@ header{
 @media screen and (max-width: 992px) {
     .logocentral {
         width: 100%;
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
+    .sala{
+    height: 400px;
+    width: 100%;
+    }
+    .cookies{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/IMATGES/farmers_mobile.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
 }
 
 .section-heading {
@@ -252,7 +260,7 @@ hr.my-4 {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
     .logocentral {
-        margin-top: 7rem;
+        margin-top: 2rem;
     }
 }
 
