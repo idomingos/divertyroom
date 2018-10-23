@@ -38,6 +38,7 @@ class eCalendar{
 		this._color = color || "black";
 		this._priority = priority || 6;
 		this._price = price || 52.5;
+		/*TODO:Revisar*/
 		this._dStart = dStart ? new Date(dStart) : !1;
 		this._dEnd = dEnd ? new Date(dEnd) : !1;
 		this._hStart = hStart || !1;
@@ -123,7 +124,7 @@ function getCalendar(calendarId,timeMin){
   						}
 	  					else{
 							var calendari = [];
-    						var d = new Date();    					
+    						//var d = new Date();    					
 							for(var i=0; i < data.items.length; i++){
 								let eLlista = document.createElement('li');
 								let texte = document.createElement('p');
@@ -194,13 +195,19 @@ jQuery.fn.extend({
   pintar: function(calendari) {
     return this.each(function() {
       let mil = $(this).attr("data-pick");
-	$(this).css("background-color", (calendari.getClass(new Date(parseInt(mil)+7200000)).color));
+     //ToDo: Repassar 7200000 dos hores 
+    //$(this).css("background-color", (calendari.getClass(new Date(parseInt(mil)).getUTCDate()).color));
+    let utc = mil<1540602000000 ? 7200000 : 3600000
+    $(this).css("background-color", (calendari.getClass(new Date(parseInt(mil)+utc)).color));
+	
+
     })
   },
   pintarReserva: function(calendari){
   	return this.each(function(){
   		let mil = $(this).attr("data-pick");
-  		let items = calendari.getTime(new Date(parseInt(mil)+7200000));
+  		let utc = mil<1540602000000 ? 7200000 : 3600000;
+  		let items = calendari.getTime(new Date(parseInt(mil)+utc));
   		$(this).find('tbody').remove();
 	  	if(items.length>0){
 	  		let element = document.createElement('thead');
@@ -243,10 +250,10 @@ function showCalendar(calendari){
 					$(".picker__footer").children().remove();
 					$(".picker__day--highlighted").removeClass("picker__day--highlighted");
 					var nom=[];
-					for(let i=0; i<calendari._items.length;i++){						
+					for(let i=0; i<calendari._items.length;i++){
 						if(!(nom.includes(calendari._items[i]._name.toString()))){
 							let p=document.createElement('p');
-							p.innerHTML= calendari._items[i]._name;//+" Preu:"+calendari._items[i]._price;
+							p.innerHTML= calendari._items[i]._name;
 							p.style.color =  getContrastYIQ((calendari._items[i]._color).substring(1));
 							p.style.backgroundColor= calendari._items[i]._color; 
 							$(".picker__footer").append(p);
