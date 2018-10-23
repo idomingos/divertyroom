@@ -32,7 +32,7 @@ var getJSON = function(url, callback) {
 	    	xhr.send();
 		};
 
-class eCalendar{
+class ECalendar{
 	constructor(name, color, priority, price, dStart, dEnd, hStart, hEnd, recurrence){
 		this._name = name || "No name";
 		this._color = color || "black";
@@ -65,7 +65,7 @@ class eCalendar{
 		}
 		return x ? {name: this._name ,color: this._color ,price: this._price, priority: this._priority, start: this._hStart, end: this._hEnd } : false;
 	}
-};
+}
 
 
 function Calendars(){
@@ -180,7 +180,7 @@ function getCalendar(calendarId,timeMin){
 									!0;
 								}
 							recurrenceFinal = recurrenceFinal.when ? recurrenceFinal : !1;
-							let eventCalendar = new eCalendar(item.summary,caract[0],caract[1],caract[2],dateTime.date, dateTime.dateEnd, dateTime.hora, dateTime.horaEnd, recurrenceFinal);
+							let eventCalendar = new ECalendar(item.summary,caract[0],caract[1],caract[2],dateTime.date, dateTime.dateEnd, dateTime.hora, dateTime.horaEnd, recurrenceFinal);
 							calendari.push(eventCalendar);
 						}		
   						resolve(calendari);
