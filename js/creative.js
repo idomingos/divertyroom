@@ -20,32 +20,20 @@
     /* Hide or show function*/
     var e = function() {
         /* Top */
-       
         a("#mainNav").offset().top > 100 ? a("#mainNav").addClass("navbar-shrink") : a("#mainNav").removeClass("navbar-shrink");
         /* Serveis 
         Math.trunc(a(window).scrollTop()-a("#serveis").offset().top)+56 == 0 ? a("#calen").fadeIn() : a("#calen").fadeOut(),
         console.log(Math.trunc(a(window).scrollTop()-a("#serveis").offset().top)+56),*/
-        /* Active section select*/
+        /* Active section select
         var element = a('.active');
         
         if(element.length>0){
-            /*Element Actiu*/
+            //Element Actiu
            !0;
         }
-        //console.log(a(element[0].hash));
-        //!1console.log($(a(element[0].hash)));
         else{ 
             !1;
-            }
-            //Fireworks.createParticle();
-        //Fireworks.createFirework();
-            //console.log(Fireworks);
-
-        /*Posició element
-        **a("#serveis").offset().top)
-        **Posició Scroll
-        **a(window).scrollTop()
-        */
+            }*/        
     };
 
     e(),    
@@ -82,8 +70,6 @@
 }(jQuery);
 
 window.onload = function() {
-    /* Init FireWorks */
-  //Fireworks.initialize();
   /*Slider portada*/
   $('header').on('click', function(){
       let element = $('#slider').children(':visible');
@@ -97,8 +83,6 @@ window.onload = function() {
     })
     });
 
-  //var festius = "ca.spain#holiday@group.v.calendar.google.com";
-  //var tarifa = "u0vqqk6aat4s31j18phgqjvamk@group.calendar.google.com";
   var tarifa = "eucatra.net_0iqtcha29bo7a8j828ed95tp9k@group.calendar.google.com"
   var reserva ="divertyroom@eucatra.net";
   var calTarifa = new Calendars();

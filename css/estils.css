@@ -9,8 +9,6 @@ body {
   font-family: 'Open Sans','spinweradBold', 'Montserrat', Arial, sans-serif; 
 }
 header{
-    /*background-image: url("../img/IMATGES/balloons.jpg");
-    background-image: url("../img/drspinwerad.png");*/
     background-size:cover;
     background-repeat: no-repeat;
     cursor:pointer;
